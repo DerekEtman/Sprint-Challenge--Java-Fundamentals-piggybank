@@ -6,6 +6,7 @@ public abstract class AbstractCoin
     String name;
     Double value;
     Integer amount;
+    double totalMoney;
 
     // Constructor
     public AbstractCoin(Integer amount)
@@ -13,19 +14,28 @@ public abstract class AbstractCoin
         this.amount = amount;
     }
 
-    // abstract method
-    public abstract double totalValue(double value, Integer amount);
+    // Abstrct method
+    public abstract double totalValue(Integer amount);
 
+    public double totalPiggyBank(double value)
+    {
+        return this.totalMoney = this.totalMoney + value;
+    }
     // Getter & Setters
     public Double getValue()
     {
         return value;
     }
+    public void setValue(Integer amount)
+    {
+        this.amount = amount;
+    }
     
-    public Integer amount()
+    public Integer getAmount()
     {
         return amount;
     }
+
 
 
 

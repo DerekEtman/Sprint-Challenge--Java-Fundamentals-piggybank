@@ -1,17 +1,18 @@
 package piggyBank;
 
-public class Quarter extends AbstractCoin
+public class Nickel extends AbstractCoin
 {
-    public String  name = "Quarter";
-    public Double value = 0.25;
+    public String  name = "Nickel";
+    public Double value = 0.05;
     public int amount = 1;
 
-    public Quarter(Integer amount)
+    public Nickel(Integer amount)
     {
         super(amount);
+        this.amount = amount;
     }
 
-    public int addQuarter(Integer i)
+    public int addNickel(Integer i)
     {
         return amount = amount + i;
     }

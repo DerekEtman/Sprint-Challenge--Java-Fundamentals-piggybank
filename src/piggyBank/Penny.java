@@ -12,13 +12,13 @@ public class Penny extends AbstractCoin
         this.amount = amount;
     }
 
-    public int addQuarter(Integer i)
+    public int addPenny(Integer i)
     {
         return amount = amount + i;
     }
-    public double totalValue(double value, Integer amount)
+    public double totalValue(Integer amount)
     {
-        return value * amount;
+        return this.value * amount;
     }
 
     @Override

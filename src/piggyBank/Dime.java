@@ -16,9 +16,9 @@ public class Dime extends AbstractCoin
     {
         return amount = amount + i;
     }
-    public double totalValue(double value, Integer amount)
+    public double totalValue(Integer amount)
     {
-        return value * amount;
+        return this.value * amount;
     }
 
     @Override

@@ -12,9 +12,9 @@ public class Dollar extends AbstractCoin
         this.amount = amount;
     }
 
-    public double totalValue(double value, Integer amount)
+    public double totalValue( Integer amount)
     {
-        return value * amount;
+        return this.value * amount;
     }
 
     @Override
