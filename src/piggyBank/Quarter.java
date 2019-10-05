@@ -1,24 +1,18 @@
 package piggyBank;
 
 public class Quarter extends AbstractCoin
-{
-    public String  name = "Quarter";
-    public Double value = 0.25;
-    public int amount = 1;
-
+{    
     public Quarter(Integer amount)
     {
         super(amount);
+        name = "Quarter";
+        value = 0.25;
     }
 
-    public int addQuarter(Integer i)
-    {
-        return amount = amount + i;
-    }
-    public double totalValue( Integer amount)
-    {
-        return this.value * amount;
-    }
+    // public Quarter()
+    // {
+    //     super();
+    // }
 
     @Override
     public String toString()
