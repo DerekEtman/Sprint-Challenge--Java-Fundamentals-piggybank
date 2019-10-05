@@ -45,7 +45,7 @@ public class Main
 
         for(AbstractCoin p : piggyBank)
         {
-            totalTest += p.getValue();
+            totalTest += p.totalValue();
         }
 
         System.out.println("The piggy bank holds " + fp.format(totalTest));
